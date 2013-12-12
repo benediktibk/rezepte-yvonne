@@ -1,9 +1,0 @@
-﻿Due to the limitations of the supported zip file format, the following file(s) had to be renamed.
-
-Original File Name  ->  New File Name
-Aufgabenanalyse_CrÃªpes.docx -> File1.docx
-Aufgabenanalyse_PutenrÃ¶llchen.docx -> File2.docx
-FrÃ¼chte.xlsx_.xlsx -> File3.xlsx
-FrÃ¼chte-Topfengratin.xlsx_.xlsx -> File4.xlsx
-KrÃ¤utergrieÃŸnockerln.xlsx_.xlsx -> File5.xlsx
-PolentatÃ¼rmchen.xlsx_.xlsx -> File6.xlsx
