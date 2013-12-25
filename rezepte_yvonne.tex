@@ -16,6 +16,7 @@ twoside,
 \usepackage[handwritten, nowarnings]{xcookybooky}
 \usepackage{sectsty}
 \usepackage{tocloft}
+\usepackage{fancyhdr}
 
 \definecolor{mygreen}{rgb}{0,.5,0}
 \definecolor{myorange}{rgb}{1,0.7,0}
@@ -71,6 +72,14 @@ twoside,
 \renewcommand{\cfttoctitlefont}{\large\headingfontorange}
 \renewcommand{\cftsecpagefont}{\large\headingfontgreen}
 \renewcommand{\cftsubsecpagefont}{\large\headingfontgreen}
+   
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[RO]{\headingfont\rightmark}
+\fancyhead[LE]{\headingfont\rightmark}
+\fancyfoot[RO]{\headingfontgreen\thepage}
+\fancyfoot[LE]{\headingfontgreen\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
 
 \begin{document}
 
@@ -84,6 +93,12 @@ twoside,
 \endgroup
 \end{center}
 \end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+
 \renewcommand*\contentsname{Inhaltsverzeichnis}
 \tableofcontents
 
