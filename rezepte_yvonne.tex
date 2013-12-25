@@ -15,6 +15,7 @@ twoside,
 \usepackage{color}
 \usepackage[handwritten, nowarnings]{xcookybooky}
 \usepackage{sectsty}
+\usepackage{tocloft}
 
 \definecolor{mygreen}{rgb}{0,.5,0}
 \definecolor{myorange}{rgb}{1,0.7,0}
@@ -61,7 +62,14 @@ twoside,
 % hyperref
 %%%%%%%%%%
 
-\sectionfont{\huge\fontfamily{fjd}\color{myorange}\selectfont}
+\newcommand{\headingfont}{\fontfamily{fjd}\selectfont}
+\newcommand{\headingfontorange}{\headingfont\color{myorange}}
+\newcommand{\headingfontgreen}{\headingfont\color{mygreen}}
+\sectionfont{\huge\headingfontorange}
+\renewcommand{\cftsecfont}{\large\headingfont}
+\renewcommand{\cftsubsecfont}{\large\headingfont}
+\renewcommand{\cftsecpagefont}{\large\headingfontgreen}
+\renewcommand{\cftsubsecpagefont}{\large\headingfontgreen}
 
 \begin{document}
 
@@ -69,9 +77,7 @@ twoside,
 \begin{titlepage}
 \begin{center}
 \begingroup
-	\fontfamily{fjd}
-	\color{myorange}
-	\selectfont
+	\headingfontorange
 	\Huge{Yvonnes Rezepte}\\[2cm]
 	\Large{\today}
 \endgroup
