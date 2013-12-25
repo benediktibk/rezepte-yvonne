@@ -12,14 +12,16 @@ twoside,
 \usepackage{gensymb}
 \usepackage{wasysym}
 \usepackage{nicefrac}
+\usepackage{color}
 \usepackage[handwritten, nowarnings]{xcookybooky}
 
 \definecolor{mygreen}{rgb}{0,.5,0}
+\definecolor{myorange}{rgb}{1,0.7,0}
 \DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
 
 \setRecipeColors
 {
-    recipename = mygreen,
+    recipename = myorange,
     ing = blue,
     inghead = blue,
     prep,
@@ -63,7 +65,17 @@ twoside,
 \begin{document}
 
 \title{Yvonnes Rezepte}
-\maketitle
+\begin{titlepage}
+\begin{center}
+\begingroup
+	\fontfamily{fjd}
+	\color{myorange}
+	\selectfont
+	\Huge{Yvonnes Rezepte}\\[2cm]
+	\Large{\today}
+\endgroup
+\end{center}
+\end{titlepage}
 \renewcommand*\contentsname{Inhaltsverzeichnis}
 \tableofcontents
 
