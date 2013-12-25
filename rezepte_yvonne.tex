@@ -1,6 +1,6 @@
-\documentclass[%
+\documentclass[
 a4paper,
-%twoside,
+twoside,
 12pt
 ]{article}
 
@@ -11,20 +11,14 @@ a4paper,
 \usepackage[ngerman, english]{babel}
 \usepackage{gensymb}
 \usepackage{wasysym}
-
 \usepackage{nicefrac}
-
-\usepackage[
-    handwritten,
-    nowarnings
-]
-{xcookybooky}
+\usepackage[handwritten, nowarnings]{xcookybooky}
 
 \definecolor{mygreen}{rgb}{0,.5,0}
 \DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
 
 \setRecipeColors
-{%
+{
     recipename = mygreen,
     ing = blue,
     inghead = blue,
@@ -36,7 +30,7 @@ a4paper,
 
 \setcounter{secnumdepth}{1}
 \renewcommand*{\recipesection}[2][]
-{%
+{
     \subsection[#1]{#2}
 }
 \renewcommand{\subsectionmark}[1]
@@ -54,7 +48,7 @@ a4paper,
     pdfkeywords          = {rezepte},
     pdfstartview         = {FitV},             
     pdfview              = {FitH},
-    pdfpagemode          = {UseNone}, % Options; UseNone, UseOutlines
+    pdfpagemode          = {UseNone},
     bookmarksopen        = {true},
     pdfpagetransition    = {Glitter},
     colorlinks           = {true},
@@ -65,8 +59,6 @@ a4paper,
 }
 % hyperref
 %%%%%%%%%%
-
-
 
 \begin{document}
 
