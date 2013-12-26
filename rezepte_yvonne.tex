@@ -81,6 +81,21 @@ twoside,
 \fancyfoot[LE]{\headingfontgreen\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
+\newcommand{\emptypage}
+{
+	\newpage
+	\thispagestyle{empty}
+	\mbox{}
+	\newpage
+}
+
+\newcommand{\nearlyemptypage}
+{
+	\newpage
+	\mbox{}
+	\newpage
+}
+
 \begin{document}
 
 \title{Yvonnes Rezepte}
@@ -94,17 +109,15 @@ twoside,
 \end{center}
 \end{titlepage}
 
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
+\emptypage
 \tableofcontents
-\newpage
+\emptypage
 
 \section{Hauptspeisen}
 \setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]{images/background_desserts}
 \include{acht_schaetze}
 
+\nearlyemptypage
 \section{Desserts}
 \setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]{images/background_desserts}
 \include{apfel_sauerrahm_kuchen}
