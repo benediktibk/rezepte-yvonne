@@ -96,11 +96,6 @@ twoside,
 	\newpage
 }
 
-%\renewcommand{\section}
-%{
-	%\cleardoublepage
-	%\section
-%}
 \let\oldsection\section
 \def\section{\cleardoublepage\oldsection}
 
@@ -130,6 +125,10 @@ twoside,
 \include{gnocchi}
 \include{feine_spinatknoedel}
 \include{spinatknoedel_suedtiroler}
+
+\section{Salate}
+\setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]{images/background_desserts}
+\include{lauch_apfel_salat}
 
 \section{Desserts}
 \setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]{images/background_desserts}
