@@ -5,3 +5,4 @@ syntax: glob
 *.pdf
 *.synctex.gz
 *.toc
+~$*.docx
