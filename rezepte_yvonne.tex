@@ -31,15 +31,6 @@ twoside,
     hinthead,
 }
 
-\setcounter{secnumdepth}{1}
-\renewcommand*{\recipesection}[2][]
-{
-    \subsection[#1]{#2}
-}
-\renewcommand{\subsectionmark}[1]
-{% no implementation to display the section name instead
-}
-
 %%%%%%%%%%
 % hyperref
 \usepackage{hyperref}    % must be the last package
@@ -103,6 +94,15 @@ twoside,
   \@nomath\em \if b\expandafter\@car\f@series\@nil
   \normalfont \else \bfseries \fi}
 \makeatother
+
+\setcounter{secnumdepth}{1}
+\renewcommand*{\recipesection}[2][]
+{
+    \subsection[#1]{#2}
+}
+\renewcommand{\subsectionmark}[1]
+{% no implementation to display the section name instead
+}
 
 \begin{document}
 
