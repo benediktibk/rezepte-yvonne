@@ -98,6 +98,12 @@ twoside,
 \let\oldsection\section
 \def\section{\cleardoublepage\oldsection}
 
+\makeatletter
+\DeclareRobustCommand{\em}{%
+  \@nomath\em \if b\expandafter\@car\f@series\@nil
+  \normalfont \else \bfseries \fi}
+\makeatother
+
 \begin{document}
 
 \title{Yvonnes Rezepte}
@@ -157,6 +163,7 @@ twoside,
 \include{suesssaures_gemuese}
 \include{bauernbrot_joghurt_knoedel}
 \include{eierschwammerlsauce}
+\include{gemuesepalatschinken}
 
 \section{Fischgerichte}
 \setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]{images/background_desserts}
