@@ -2,7 +2,7 @@ syntax: glob
 *.log
 *.aux
 *.out
-*.pdf
+rezepte_yvonne.pdf
 *.synctex.gz
 *.toc
 ~$*.docx
