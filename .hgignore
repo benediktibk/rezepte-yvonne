@@ -6,3 +6,5 @@ rezepte_yvonne.pdf
 *.synctex.gz
 *.toc
 ~$*.docx
+*.bbl
+*.blg
